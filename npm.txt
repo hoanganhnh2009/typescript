@@ -1,0 +1,50 @@
+start : npm typescript -g
+step1: tsc --init
+step2: create server : npm init
+Các kiểu dữ liệu:
+    -- Basic Type: number,string,boolean,structures
+    -- any: Kiểu động
+    -- number : --- let decimal: number =6;
+                --- let hex: number = 0xf00d;
+                --- let binary: number = 0b1010;
+                --- let octal: number = 0o744;
+   -- string : -- let color: string = "red";
+                
+Lesson 8: Arrow function: là cái chức năng, cách viết function dạng viết tắt, ngắn dành cho function có danh dòng(Để k phải viết nhiều từ khóa như return, function, thân hàm)      
+
+let calculateArrow = (bonus:number,tax:number)=>{
+    return (200000+bonus)-tax;
+};
+() => Diện diện cho function() chứa các biến : function nạp danh
+=> "" "Đại diện cho thân hàm return"
+
+Lesson 9: Từ khóa this 
+- Lợi ích của arrow function: Giải quyết được vấn đề từ khóa this trong vấn đề nội bộ 
+Lesson 10: Giá trị mặc định cho tham số của function (Default Parameter)
+Giá trị mặc định: Nếu không truyền tham số sẽ lấy giá trị mặc định
+-- Tham số sau có thể lấy giá trị của tham số trước nhưng tham  số trước k thể lấy giá trị của tham số sau.
+Lesson 11: Rest Parameter
+-- Đ/N: Khi chúng ta muốn làm việc với nhiều tham số hay là 1 nhóm, chúng ta muốn lấy(k biết bn tham số)
+-- Trong TS có một loại rest Parameter giúp chúng ta làm việc vs ds ấy như là 1 nhóm. Nó trích xuất thành một mảng chúng ta muốn truyền bao nhiêu cũng được
+-- Khai báo: có dấu 3 chấm trước tên biến
+--let displayColor = function(...colors:string[]){}
+...colors = var colors = []
+-- Biến message đại diện cho biến đầu tiên, Biến thứ 2 (color)
+-- Lợi ích: Có thể truy xuất các biến mà k cần biết tham số của nó(arguments.length)
+-- Truyền vào từng phần từ lấy ra 1 mảng;
+
+Lesson 12:Spead Parameter (Spead: Trải rộng ra, Take cái giá trị của biến, take 1 mảng có thể bóc tác thanfhc các tham số độc lập)
+    -- Là chức năng ngược của rest Parameter
+    -- Truyền vào một mảng lấy ra tửng phần tử
+
+Lesson 13: Destrucstring Array (1 thảo tác chuyển đổi mảng sang các biến độc lập != spread)
+-- Bóc tách mảng sang danh sách các biên
+-- Nếu muốn bỏ qua biến nào "Bổ trống ,"
+-- Có thể sử dụng được rest parameter(...emp2)
+-- use: let [emp1,...emp2] = employees;
+Lesson 14: Bóc tách object ra biến tách biệt
+--- use : let {fname,lname,level} = empl;
+--- đổi tên giá trị: let {fname: f,lname : l,level: lv} = empl;
+
+Lesson 15: String Template && Đẩy code lên github
+-- `` Kí hiệu Template
