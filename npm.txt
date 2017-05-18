@@ -48,3 +48,28 @@ Lesson 14: Bóc tách object ra biến tách biệt
 
 Lesson 15: String Template && Đẩy code lên github
 -- `` Kí hiệu Template
+
+Lesson 16: For of loop Giống foreach in c#
+-- use: for(let item of colorNames){
+    console.log(item);
+}
+Lesson 17: Khái báo class
+-- Important
+-- use: class Person{ //Là 1 function k hỗ trợ hoisting
+
+}
+let p1 = new Person(); // object
+
+console.log(typeof p1); //Kiểu
+-- add run vào prototype của function p1.run() // Tương đương prototype
+-- cú pháp class Person(){
+    run(){
+        //Phương thức
+    }
+}
+
+Lesson 18: các phương thức trong class và khai báo các phương thức
+-- constructor : Khai báo hàm khởi tạo cho đối tượng
+-- Được gọi khi dùng toán tử new
+
+
